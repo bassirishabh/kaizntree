@@ -1,0 +1,22 @@
+<!-- dashboard_app/templates/build_dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Dashboard</title>
+    <!-- Add your CSS links here -->
+</head>
+<body>
+    <h1>Build Dashboard</h1>
+    
+    {% for production_order in production_orders %}
+        <div>
+            <p>Reference: <a href="{{ production_order.reference_link }}">{{ production_order.reference }}</a></p>
+            <!-- Add other production order details -->
+        </div>
+    {% endfor %}
+
+    <!-- Add your JavaScript links here -->
+</body>
+</html>

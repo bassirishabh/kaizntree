@@ -1,0 +1,23 @@
+<!-- dashboard_app/templates/item_dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Dashboard</title>
+    <!-- Add your CSS links here -->
+</head>
+<body>
+    <h1>Item Dashboard</h1>
+    
+    {% for item in items %}
+        <div>
+            <p>SKU: {{ item.sku }}</p>
+            <p>Name: {{ item.name }}</p>
+            <!-- Add other item details -->
+        </div>
+    {% endfor %}
+
+    <!-- Add your JavaScript links here -->
+</body>
+</html>
